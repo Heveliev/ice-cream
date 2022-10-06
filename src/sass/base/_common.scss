@@ -1,0 +1,30 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol,ul{
+    margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+img{display: block;}
+button {  cursor: pointer;
+    font-family:inherit;}
+
+body {
+    font-family: var(--primary-font-family);
+    // color:var(--primary-text-dark-color);
+    font-size: 14px;
+    // letter-spacing: 0.03em;
+    // background-color: var(--primary-background-color);
+
+}
