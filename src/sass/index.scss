@@ -5,6 +5,7 @@
 @import "./base/container";
 
 @import "./components/modal-buy";
+@import "./components/modal-ingredient";
 @import "./components/read-more-modal";
 @import "./components/modal-location";
 @import "./components/modal-franchise";
@@ -12,9 +13,7 @@
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/products";
-@import "./layout/about";
-@import "./layout/advantages";
-@import "./layout/gallery";
-@import "./layout/customer-reviews";
+@import "./layout/about-advantages";
+@import "./layout/gallery-review";
 @import "./layout/contacts";
 @import "./layout/footer";
