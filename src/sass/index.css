@@ -1,0 +1,109 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Seymour One", sans-serif;
+  --accent-color:#F8D24E;
+  --primary-bcg-color: #84A178;
+  --second-accent-color: #84A178;
+  --secondary-bcg-color:#FFFFFF;
+  --primary-text-color:#FCFCFC;
+  --secondary-text-color:#131313;
+  --address-text-color:#D6936D;
+  --time-working-text-color:#907E82;
+  --copyright-color:#7A7A7A;
+  --icon-mobile-close-color:#FCFCFC;
+  --icon-modal-close:#131313;
+  --input-bcg-color:#FCF8EB;
+  --img-ice-cream-bcg-color:#AEC6A5;
+  --img-ice-cream-ln-grad-color:rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7), #D9D9D9;
+  --img-ice-cream-shadow-color:rgba(10, 136, 23, 0.25);
+  --img-ice-coffee-bcg-color:#EFD478;
+  --img-ice-coffee-ln-grad-color:rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7), #D9D9D9;
+  --img-ice-coffee-shadow-color:rgba(153, 114, 23, 0.25);
+  --img-milkshake-bcg-color:#D6936D;
+  --img-milkshake-ln-grad-color:rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7), #D9D9D9;
+  --img-milkshake-shadow-color:rgba(0, 0, 0, 0.25);
+  --about-ln-gard-color:rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7), #D9D9D9;
+  --about-shadow-color:gba(153, 114, 23, 0.25);
+  --review-img-bcg-color:#6E6E6E;
+  --social-hv-fc-color:#FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  background-color: var(--primary-bcg-color);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}/*# sourceMappingURL=index.css.map */
