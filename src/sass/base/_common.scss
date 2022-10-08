@@ -16,7 +16,9 @@ padding-left: 0;
 }
 a{text-decoration: none;}
 ul{list-style: none;}
-img{display: block;}
+img{display: block;
+    max-width:100%;
+    height: auto;}
 button {  cursor: pointer;
     font-family:inherit;}
 

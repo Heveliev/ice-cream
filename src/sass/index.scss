@@ -4,6 +4,8 @@
 @import './base/common';
 @import "./base/container";
 
+@import "./components/is-hidden";
+@import "./components/backdrop";
 @import "./components/modal-buy";
 @import "./components/modal-ingredient";
 @import "./components/read-more-modal";
