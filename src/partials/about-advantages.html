@@ -1,0 +1,128 @@
+<section class="container">
+  <div class="about">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+  </div>
+
+  <div class="about-content">
+    <div class="about-content__img--bgc">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/about/about.png    1x,
+            ./images/desktop/about/about@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/about/about.png    1x,
+            ./images/tablet/about/about@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/about/about.png    1x,
+            ./images/mobile/about/about@2x.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          class="about-content__img"
+          src="./images/mobile/about/about@2x.png"
+          alt="grey cow"
+          width="278"
+          height="278"
+        />
+      </picture>
+    </div>
+    <div class="about-content__text--wrapper">
+      <p class="about-content__text--lead">
+        Ice is a place where you will become not only a little happier, but also
+        healthier. Health is the main value for us, and we follow it when
+        creating our handmade desserts.
+      </p>
+      <p class="about-content__text">
+        We use traditional recipes and 100% natural ingredients. Our products
+        are so natural that they can be given to children from the age of three
+        years. Sweets lovers can expect 55 types of ice cream, 15 types of
+        coffee and 23 milkshakes.
+      </p>
+      <button class="about-content__button" type="button">
+        <span class="about-content__button--text">Read more</span>
+        <svg class="about-content__button--icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-about-button"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<section class="advantages container">
+  <h2 class="advantages__title visually-hidden">Advantages</h2>
+  <ul class="advantages-list">
+    <li class="advantages-list__item">
+      <div class="advantages-list-item__img--bg">
+        <picture>
+          <source
+            srcset="
+              ./images/advantages/cow.png    1x,
+              ./images/advantages/cow@2x.png 2x
+            "
+          />
+          <img
+            class="advantages-list-item__img"
+            src="./images/advantages/cow.png"
+            alt=""
+          />
+        </picture>
+      </div>
+      <p class="advantages-list__item--lead-text">721</p>
+      <p class="advantages-list__item--text">
+        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+      </p>
+    </li>
+    <li class="advantages-list__item">
+      <div class="advantages-list-item__img--bg">
+        <picture>
+          <source
+            srcset="
+              ./images/advantages/weight.png    1x,
+              ./images/advantages/weight@2x.png 2x
+            "
+          />
+          <img
+            class="advantages-list-item__img"
+            src="./images/advantages/weight.png"
+            alt=""
+          />
+        </picture>
+      </div>
+      <p class="advantages-list__item--lead-text">16KG</p>
+      <p class="advantages-list__item--text">
+        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+      </p>
+    </li>
+    <li class="advantages-list__item">
+      <div class="advantages-list-item__img--bg">
+        <picture>
+          <source
+            srcset="
+              ./images/advantages/ice-crema.png    1x,
+              ./images/advantages/ice-crema@2x.png 2x
+            "
+          />
+          <img
+            class="advantages-list-item__img"
+            src="./images/advantages/ice-crema.png"
+            alt=""
+          />
+        </picture>
+      </div>
+      <p class="advantages-list__item--lead-text">84</p>
+      <p class="advantages-list__item--text">
+        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+      </p>
+    </li>
+  </ul>
+</section>
