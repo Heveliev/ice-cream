@@ -1,0 +1,114 @@
+<section class="hero">
+  <div class="hero__container container">
+    <div class="hero__content-box">
+      <div class="hero__title-box">
+        <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+        <div class="hero__link-box">
+          <a class="hero__link-products" href="">Products</a>
+          <a class="hero__link-made" href="">How it’s made?</a>
+        </div>
+      </div>
+      <div class="hero__info-box">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <span class="hero__num">16</span>
+            <span class="hero__type">cafes</span>
+          </li>
+          <li class="hero__item">
+            <span class="hero__num">23</span>
+            <span class="hero__type">food trucks</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero__text-box">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+      </div>
+    </div>
+    <div class="hero__img-box">
+      <picture>
+        <picture>
+          <source
+            srcset="
+              ./images/tablet/hero/dish.png    1x,
+              ./images/tablet/hero/dish@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+          />
+          <source
+            srcset="
+              ./images/desktop/hero/dish.png    1x,
+              ./images/desktop/hero/dish@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            src="./images/tablet/hero/dish.png"
+            alt="Ice cream"
+            class="hero__img-dish"
+          />
+        </picture>
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./images/mobile/hero/bcg.png    1x,
+            ./images/mobile/hero/bcg@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          width="480px"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero/bcg.png    1x,
+            ./images/tablet/hero/bcg@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero/bcg.png    1x,
+            ./images/desktop/hero/bcg@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          src="./images/mobile/hero/bcg.png"
+          alt="Dots"
+          class="hero__img-bcg"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./images/mobile/hero/ice-crema.png    1x,
+            ./images/mobile/hero/ice-crema@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero/ice-cream.png    1x,
+            ./images/tablet/hero/ice-cream@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero/ice-cream.png    1x,
+            ./images/desktop/hero/ice-cream@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          src="./images/mobile/hero/ice-crema.png"
+          alt="Ice cream"
+          class="hero__img-ic"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
