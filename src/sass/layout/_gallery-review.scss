@@ -1,21 +1,62 @@
-.test{
-  margin-bottom: 50px;
-}
 
+
+
+// Gallery
 
 .gallery{
+ 
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 36px;
     margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px){
+  .gallery{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .gallery{ 
+    margin-top: 86px;}
+}
+
+.gallery-container{
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__images{
+
+  height: 130px;
+  width: 279px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+  .gallery__images{
+    height: 327px;
+    width: 704px;
+  } 
+}
+
+@media screen and (min-width: 1200px){
+  .gallery__images{ 
+    width: 1013px;
+    height: 422px;}
+}
 
 
 
 
 
-// review
+
+// Review
 
 .customer{
 padding-top: 80px;
@@ -24,8 +65,20 @@ padding-bottom: 100px;
 background-image: url(../images/desktop/gallery/bcg.png), linear-gradient(#FCFCFC, #FCFCFC);
 background-repeat: no-repeat;
 background-size: 100% auto, auto 1070px;
+}
 
+@media screen and (min-width: 768px){
+  .customer{
+    padding-top: 60px;
   }
+}
+
+@media screen and (min-width: 1200px){
+  .customer{
+    padding-top: 60px;
+  }
+}
+
 
 
 
@@ -50,7 +103,34 @@ background-size: 100% auto, auto 1070px;
     }
 
 
+.customer__pict,
+.customer__pict > source,
+.customer__pict > img{
+display: block;
+max-width: 85px;
+max-height: 85px;
+margin: 0 auto 32px auto;
+border-radius: 50%;
+}
 
+.customer__text{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 768px){
+  .customer__text{
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .customer__text{
+    padding-top: 60px;
+  }
+}
+
+  
 .customer__review-text{
     
    font-family: var(--primary-font-family);
@@ -103,17 +183,15 @@ background-size: 100% auto, auto 1070px;
   margin-bottom: 32px;
 }
 
-
-
-
-.customer__pict,
-.customer__pict > source,
-.customer__pict > img{
-max-width: 85px;
-max-height: 85px;
-margin: 0 auto 32px auto;
-border-radius: 50%;
+@media screen and (min-width: 768px){
+  .customer__name{
+    font-size: 16px;
+  margin-bottom: 32px;
+  }
 }
+
+
+
 
 .slider {
 position: relative;
@@ -187,8 +265,6 @@ margin-left: -200%;
   #switch3:checked ~ .active label:nth-child(3)
   #switch4:checked ~ .active label:nth-child(4) {
     background: var(--primary-bcg-color);
-    outline-color: #333;
-    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
     }
   
   .slides .image {
