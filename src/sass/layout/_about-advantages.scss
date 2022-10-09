@@ -1,0 +1,248 @@
+
+
+.about {
+  padding-top: 60px;
+  margin-bottom: 32px;
+}
+
+.about__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-content {
+  padding-bottom: 42px;
+}
+
+.about-content__img--bgc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.about-content__img--bgc::before {
+  content: '';
+  display: block;
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+}
+
+.about-content__img {
+  width: 278px;
+  height: 278px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 22;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-content__text--lead,
+.about-content__text {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 35px;
+  padding-left: 35px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-align: center;
+}
+
+.about-content__text--lead {
+  line-height: calc(21 / 12);
+}
+
+.about-content__text--tablet {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-align: center;
+}
+
+.about-content__button {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 164px;
+  height: 42px;
+  column-gap: 5px;
+
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  line-height: calc(18 / 14);
+
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border: none;
+}
+
+.about-content__button--icon {
+  fill: #131313;
+}
+
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-list-item__img--bg {
+  position: relative;
+}
+
+.advantages-list-item__img--bg::before {
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.advantages-list-item__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.advantages-list__item--lead-text {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-list__item--text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    display: flex;
+    padding-bottom: 53px;
+  }
+  .about__label {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  .about__title {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+  }
+
+  .about-content__img,
+  .about-content__img--bgc::before {
+    width: 330px;
+    height: 330px;
+  }
+
+  .about-content__img--bgc {
+    margin-bottom: 0;
+  }
+
+  .about-content__text--wrapper {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+
+  .about-content__text--lead,
+  .about-content__text {
+    padding: 0;
+    text-align: start;
+  }
+
+  .about-content__button {
+    margin-top: 48px;
+  }
+
+  .about-content__text--tablet {
+    text-align: start;
+    display: block;
+  }
+
+  .about-content__text {
+    line-height: calc(21 / 12);
+  }
+
+  .about-content__button {
+    margin-left: 0;
+  }
+
+  .advantages-list {
+    column-gap: 80px;
+    display: flex;
+  }
+
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .advantages-list__item--lead-text {
+    font-family: var(--primary-font-family);
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+
+  .advantages-list__item--text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
