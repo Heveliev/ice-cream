@@ -49,22 +49,16 @@
     border: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        border-color: #0A8817;
-        cursor: pointer;
-    }
-
-    &:hover .modal-close-icon,
-    &:focus .modal-close-icon {
-        fill: #ababab;
-    }
 }
 
 .modal-buy-close-icon {
     fill: var(--icon-modal-close);
     width: 16px;
     height: 16px;
+    .modal-buy-close-btn:hover &,
+    .modal-buy-close-btn:focus & {
+        fill: #ababab;
+    }
 }
 
 .modal-buy-form {
@@ -77,12 +71,9 @@
     align-items: center;
     justify-content: center;
     color: var(--secondary-text-color);
-    width: 221px;
-    height: 24px;
     left: 30px;
     top: 28px;
     font-family: var(--secondary-font-family);
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -94,7 +85,6 @@
 
 .buy-now-list {
     display: block;
-    list-style-type: disc;
     margin-bottom: 20px;
 }
 
@@ -133,10 +123,9 @@
 }
 
 .buy-now-list-item:first-child:before {
-    background-color: var(--img-ice-cream-bcg-color);
-    background: url(../images/modal/buy/buy1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    background-size: cover;
-    background-position-y: -10px, 0px, 0px;
+    background-image: url(../images/modal/buy/buy1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    // background-size: cover;
+    // background-position-y: -8px, 0px, 0px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
@@ -144,9 +133,8 @@
 
 
 .buy-now-list-item:nth-child(2):before {
-    background-color: var(--img-ice-coffee-bcg-color);
-    background: url(../images/modal/buy/buy2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-    background-position-y: -8px, 0px, 0px;
+    background-image: url(../images/modal/buy/buy2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    // background-position-y: -8px, 0px, 0px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
@@ -164,9 +152,8 @@
 }
 
 .buy-now-list-item:nth-child(3):before {
-    background-color: var(--img-milkshake-bcg-color);
-    background: url(../images/modal/buy/buy3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-    background-position-y: -8px, 0px, 0px;
+    background-image: url(../images/modal/buy/buy3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    // background-position-y: -8px, 0px, 0px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
@@ -192,7 +179,6 @@
 
 .buy-now-list-title {
     text-align: center;
-    letter-spacing: .04em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
     font-size: 16px;
@@ -200,29 +186,26 @@
     line-height: 1.25;
 }
 
-.modal-buy-form-field {
+.modal-buy-form-field:not(:last-of-type) {
     margin-bottom: 10px;
 }
 
 .modal-buy-form-input-wrapper {
-    position: relative;
     display: block;
+    position: relative;
 }
 
 .modal-buy-form-input {
-    position: relative;
     display: block;
     width: 100%;
     height: 32px;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 7px;
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
     color: var(--secondary-text-color);
-    background: rgba(248, 210, 78, 0.1);
+    background-color: var(--input-bcg-color);
     border: 1px solid var(--primary-bcg-color);
     border-radius: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -238,18 +221,18 @@
     width: 100%;
     height: 65px;
     padding-top: 8px;
+    padding-bottom:7px;
     padding-right: 12px;
-    padding-bottom: 7px;
     padding-left: 12px;
     color: var(--secondary-text-color);
-    background: rgba(248, 210, 78, 0.1);
+    background-color: var(--input-bcg-color);
     border: 1px solid var(--primary-bcg-color);
     border-radius: 10px;
     resize: none;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.01em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom:25px ;
 
     &:focus {
         outline: none;
@@ -269,11 +252,9 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    letter-spacing: 0.06em;
     color: var(--secondary-text-color);
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    cursor: pointer;
     border: 1px solid var(--accent-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
