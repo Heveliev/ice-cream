@@ -1,0 +1,269 @@
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     z-index: 100;
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: auto;
+//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     overflow-y: scroll;
+
+    // &.is-hidden {
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     pointer-events: none;
+    // }
+// }
+
+.modal-buy {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 28px;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 280px;
+    // height: 609px;
+    background-color: var(--secondary-bcg-color);
+    border-radius: 10px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid var(--accent-color);
+    padding: 8px 8px 28px;
+}
+
+
+.modal-buy-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-buy-close-icon {
+    fill: var(--icon-modal-close);
+    width: 16px;
+    height: 16px;
+    .modal-buy-close-btn:hover &,
+    .modal-buy-close-btn:focus & {
+        fill: #ababab;
+    }
+}
+
+.modal-buy-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-now-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
+    left: 30px;
+    top: 28px;
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-left: 30px;
+    margin-right: 29px;
+    margin-bottom: 57px;
+}
+
+.buy-now-list {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.buy-now-list-item {
+    height: 164px;
+    width: 132px;
+    border-radius: 24px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 103px 0 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.buy-now-list-item:before {
+    content: "";
+    width: 132px;
+    height: 139px;
+
+    border-radius: 50%;
+    position: absolute;
+    top: -28%;
+    left: -1%;
+}
+
+.buy-now-list-item:first-child {
+    border: 2px solid var(--primary-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--primary-bcg-color);
+        cursor: pointer;
+    }
+}
+
+.buy-now-list-item:first-child:before {
+    background-image: url(../images/modal/buy/buy1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    // background-size: cover;
+    // background-position-y: -8px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+
+.buy-now-list-item:nth-child(2):before {
+    background-image: url(../images/modal/buy/buy2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    // background-position-y: -8px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+}
+
+.buy-now-list-item:nth-child(2) {
+    border: 2px solid var(--img-ice-coffee-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--img-ice-coffee-bcg-color);
+        cursor: pointer;
+    }
+}
+
+.buy-now-list-item:nth-child(3):before {
+    background-image: url(../images/modal/buy/buy3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    // background-position-y: -8px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-now-list-item:nth-child(3) {
+    border: 2px solid var(--img-milkshake-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--img-milkshake-bcg-color);
+        cursor: pointer;
+    }
+
+}
+
+.buy-now-list-item:not(:last-child) {
+    margin-bottom: 65px;
+}
+
+
+
+
+.buy-now-list-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.modal-buy-form-field:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.modal-buy-form-input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.modal-buy-form-input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--secondary-text-color);
+    background-color: var(--input-bcg-color);
+    border: 1px solid var(--primary-bcg-color);
+    border-radius: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: #0A8817;
+    }
+}
+
+.modal-buy-form-message {
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding-top: 8px;
+    padding-bottom:7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: var(--secondary-text-color);
+    background-color: var(--input-bcg-color);
+    border: 1px solid var(--primary-bcg-color);
+    border-radius: 10px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.16;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom:25px ;
+
+    &:focus {
+        outline: none;
+        border-color: #0A8817;
+    }
+}
+
+.modal-buy-form-button {
+    align-self: center;
+    min-width: 114px;
+    min-height: 42px;
+    padding-top: 10px;
+    padding-right: 52px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    background-color: var(--accent-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--secondary-text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border: 1px solid var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        color: var(--primary-text-color);
+    }
+}
