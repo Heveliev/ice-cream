@@ -1,0 +1,52 @@
+<div class="backdrop is-hidden" id="franchise_modal">
+    <button type="button" class="modal-close" data-modal-close value="franchise_modal">
+       <svg class="" width="20" height="20">
+        <use href="/src/images/sprite.svg#icon-modal-close"></use>
+       </svg> 
+    </button>
+    <p class="modal-title">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="modal__main-text">
+        Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.
+    </p>
+    <form name="franchise_modal">
+        <ul class="modal-user__list list">
+            <li class="modal-user__item">
+            <label class="modal-label" for="user-name">Name</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Name"
+              required
+              id="user-name"/></li>
+            <li class="modal-user__item">
+                <label class="modal-label" for="user-tel">Tel</label>
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder="Phone"
+              name="user-tel"
+              id required="user-tel"
+              value=""
+              title="+380 (96) 111-11-11"/>
+            </li>
+            <li class="modal-user__item">
+                <label class="modal-label" for="user-email">Email</label>
+                <input
+                    type="email"
+                    class="modal-input"
+                    name="user-email"
+                    placeholder="Email"
+                    id="user-email"/>
+            </li>
+            <li class="modal-user__item">
+                <textarea
+            name="user-text"
+            id="user-text"
+            placeholder="Comment"
+            class="modal-text"></textarea>
+            </li>
+        </ul>
+        <button type="submit" class="modal-send">Submit</button>
+    </form>
+</div>
