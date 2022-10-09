@@ -50,7 +50,6 @@
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
@@ -77,7 +76,6 @@
 .read-modal__text {
   color: var(--secondary-text-color);
   line-height: 1.4;
-  letter-spacing: 0;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
