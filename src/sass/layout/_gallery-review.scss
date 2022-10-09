@@ -1,3 +1,8 @@
+.test{
+  margin-bottom: 50px;
+}
+
+
 .gallery{
     display: flex;
     justify-content: center;
@@ -12,11 +17,14 @@
 
 // review
 
-.customer_back{
-
+.customer{
+padding-top: 80px;
+padding-bottom: 100px;
 
 background-image: url(../images/desktop/gallery/bcg.png), linear-gradient(#FCFCFC, #FCFCFC);
 background-repeat: no-repeat;
+background-size: 100% auto, auto 1070px;
+
   }
 
 
@@ -32,7 +40,7 @@ background-repeat: no-repeat;
     border-radius: 24px;
     padding: 34px 39px;
     width: 100%;
-    margin-bottom: 30px;}
+    margin-bottom: 32px;}
 
     @media screen and (min-width: 768px){
         .customer__bg{
@@ -86,7 +94,13 @@ background-repeat: no-repeat;
 
 
 .customer__name{
-    margin-bottom: 14px;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 32px;
 }
 
 
@@ -95,8 +109,8 @@ background-repeat: no-repeat;
 .customer__pict,
 .customer__pict > source,
 .customer__pict > img{
-max-width: 84px;
-max-height: 84px;
+max-width: 85px;
+max-height: 85px;
 margin: 0 auto 32px auto;
 border-radius: 50%;
 }
@@ -173,7 +187,9 @@ margin-left: -200%;
   #switch3:checked ~ .active label:nth-child(3)
   #switch4:checked ~ .active label:nth-child(4) {
     background: var(--primary-bcg-color);
-  }
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    }
   
   .slides .image {
     transition: all 800ms cubic-bezier(0.7, 0, 0.175, 1);
