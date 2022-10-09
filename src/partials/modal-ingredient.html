@@ -1,13 +1,18 @@
-<div class="backdrop-ingredients visually-hidden">
+<!-- modal-1 -->
+<div class="backdrop-ingredients is-hidden" data-modal-ingredients-green>
   <div class="modal-ingredients">
-    <button type="button" class="modal-ingredients__close-btn">
-      <svg class="modal-ingredients__icon">
+    <button
+      type="button"
+      class="modal-ingredients__close-btn"
+      data-modal-close-ingredients-green
+    >
+      <svg class="modal-ingredients__icon" width="20" height="20">
         <use href="./images/sprite.svg#icon-modal-close"></use>
       </svg>
     </button>
     <div class="ingredients">
       <p class="ingredients__title">Chololate icecream</p>
-      <div class="ingredients-img"></div>
+      <div class="ingredients-img ingredients-img"></div>
       <ul class="ingredients-box">
         <li class="ingredients-box__item">
           <div class="ingredients-box__number">320</div>
@@ -57,39 +62,279 @@
       </ul>
     </div>
     <form class="ingredients-form">
-      <label class="ingredients-form__field">
-        <span class="ingredients-form__name">Name</span>
-        <span class="ingredients-form__input-wrapper">
-          <input
-            type="text"
-            class="modal-form-input"
-            required
-            pattern="[a-zA-Zа]+"
-            name="user_name"
-            minlength="2"
-          />
-        </span>
-      </label>
-      <label class="ingredients-form__field">
-        <span class="ingredients-form__name">Phone</span>
-        <span class="ingredients-form__input-wrapper">
-          <input
-            type="tel"
-            class="modal-form-input"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            name="user_phone"
-          />
-        </span>
-      </label>
-      <label class="ingredients-form__field">
-        <span class="ingredients-form__name">Comment</span>
-        <textarea
-          class="ingredients-form__message"
-          name="user_message"
-        ></textarea>
-      </label>
+      <div>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="text"
+              class="modal-form-input"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа]+"
+              name="user_name"
+              minlength="2"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="tel"
+              class="modal-form-input"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              name="user_phone"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <textarea
+            class="ingredients-form__message"
+            placeholder="Comment"
+            name="user_message"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" class="ingredients-btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- modal-2 -->
+<div class="backdrop-ingredients is-hidden" data-modal-ingredients-yellow>
+  <div class="modal-ingredients">
+    <button
+      type="button"
+      class="modal-ingredients__close-btn"
+      data-modal-close-ingredients-yellow
+    >
+      <svg class="modal-ingredients__icon" width="20" height="20">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <div class="ingredients">
+      <p class="ingredients__title">Chololate icecream</p>
+      <div class="ingredients-img ingredients-img--color-yellow"></div>
+      <ul class="ingredients-box">
+        <li class="ingredients-box__item ingredients-box__item--color-yellow">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-yellow"
+          >
+            320
+          </div>
+          <div class="ingredients-box__text">kcal</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-yellow">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-yellow"
+          >
+            4g
+          </div>
+          <div class="ingredients-box__text">Protein</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-yellow">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-yellow"
+          >
+            8,2g
+          </div>
+          <div class="ingredients-box__text">Fats</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-yellow">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-yellow"
+          >
+            40,4g
+          </div>
+          <div class="ingredients-box__text">Carbs</div>
+        </li>
+      </ul>
+      <div>
+        <p class="ingredients-caption">Ingredients</p>
+      </div>
+      <ul class="ingredients__list">
+        <li class="ingredients__item">
+          <p class="ingredients__text">Milk</p>
+          <p class="ingredients__text">100ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Belgian chocolate</p>
+          <p class="ingredients__text">20g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Cream</p>
+          <p class="ingredients__text">150 ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Cocoa powder</p>
+          <p class="ingredients__text">30g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Sugar</p>
+          <p class="ingredients__text">40g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Vanilla sugar</p>
+          <p class="ingredients__text">10g</p>
+        </li>
+      </ul>
+    </div>
+    <form class="ingredients-form">
+      <div>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="text"
+              class="modal-form-input"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа]+"
+              name="user_name"
+              minlength="2"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="tel"
+              class="modal-form-input"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              name="user_phone"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <textarea
+            class="ingredients-form__message"
+            placeholder="Comment"
+            name="user_message"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" class="ingredients-btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- modal-3 -->
+<div class="backdrop-ingredients is-hidden" data-modal-ingredients-brown>
+  <div class="modal-ingredients">
+    <button
+      type="button"
+      class="modal-ingredients__close-btn"
+      data-modal-close-ingredients-brown
+    >
+      <svg class="modal-ingredients__icon" width="20" height="20">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <div class="ingredients">
+      <p class="ingredients__title">Chololate icecream</p>
+      <div class="ingredients-img ingredients-img--color-brown"></div>
+      <ul class="ingredients-box">
+        <li class="ingredients-box__item ingredients-box__item--color-brown">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-brown"
+          >
+            320
+          </div>
+          <div class="ingredients-box__text">kcal</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-brown">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-brown"
+          >
+            4g
+          </div>
+          <div class="ingredients-box__text">Protein</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-brown">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-brown"
+          >
+            8,2g
+          </div>
+          <div class="ingredients-box__text">Fats</div>
+        </li>
+        <li class="ingredients-box__item ingredients-box__item--color-brown">
+          <div
+            class="ingredients-box__number ingredients-box__number--color-brown"
+          >
+            40,4g
+          </div>
+          <div class="ingredients-box__text">Carbs</div>
+        </li>
+      </ul>
+      <div>
+        <p class="ingredients-caption">Ingredients</p>
+      </div>
+      <ul class="ingredients__list">
+        <li class="ingredients__item">
+          <p class="ingredients__text">Milk</p>
+          <p class="ingredients__text">100ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Belgian chocolate</p>
+          <p class="ingredients__text">20g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Cream</p>
+          <p class="ingredients__text">150 ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Cocoa powder</p>
+          <p class="ingredients__text">30g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Sugar</p>
+          <p class="ingredients__text">40g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__text">Vanilla sugar</p>
+          <p class="ingredients__text">10g</p>
+        </li>
+      </ul>
+    </div>
+    <form class="ingredients-form">
+      <div>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="text"
+              class="modal-form-input"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа]+"
+              name="user_name"
+              minlength="2"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <span class="ingredients-form__input-wrapper">
+            <input
+              type="tel"
+              class="modal-form-input"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              name="user_phone"
+            />
+          </span>
+        </label>
+        <label class="ingredients-form__field">
+          <textarea
+            class="ingredients-form__message"
+            placeholder="Comment"
+            name="user_message"
+          ></textarea>
+        </label>
+      </div>
       <button type="submit" class="ingredients-btn-submit">Submit</button>
     </form>
   </div>
