@@ -81,19 +81,14 @@
 
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
 
     background-color: var(--accent-color);
-    color: var(--icon-modal-close);
-
+    color: var(--secondary-text-color);
     padding: 12px 34px;
     min-width: 152px;
-
     border: none;
     border-radius: 6px;
 
@@ -109,16 +104,12 @@
     border: none;
     padding: 10px 15px;
     line-height: 0;
-    top: 16px;
-    right: 20px;
     margin-left: auto;
 
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
-
-// mob menu
 
 
 .container-mob {
@@ -159,6 +150,7 @@
 }
 
 .mob-menu {
+    background-color: var(--primary-bcg-color);
     position: fixed;
     z-index: 3;
     top: 0;
@@ -194,7 +186,6 @@
             font-weight: 700;
             font-size: 48px;
             line-height: 1.23;
-            letter-spacing: null;
             color: var(--primary-text-color);
         }
     }
@@ -222,12 +213,12 @@
     justify-content: center;
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-}
+// .is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+//     transform: translateX(100%);
+// }
 
 .main-button--none {
     @media screen and (min-width: 768px) {
@@ -250,9 +241,6 @@
 .main-button {
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
