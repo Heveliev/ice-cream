@@ -30,7 +30,7 @@
     background-color: var(--secondary-bcg-color);
     border-radius: 10px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--accent-color);  
+    border: 2px solid var(--accent-color);
     padding: 8px 8px 28px;
 }
 
@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     color: var(--secondary-text-color);
-    width:221px;
+    width: 221px;
     height: 24px;
     left: 30px;
     top: 28px;
@@ -87,18 +87,15 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 28px;
-    margin-left: 30px;  
+    margin-left: 30px;
     margin-right: 29px;
-    margin-bottom: 57px;        
+    margin-bottom: 57px;
 }
 
 .buy-now-list {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: 20px;
 }
 
 .buy-now-list-item {
@@ -108,16 +105,17 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding: 123px 0 20px;
+    padding: 103px 0 20px;
     display: flex;
+    justify-content: center;
     position: relative;
 }
 
 .buy-now-list-item:before {
     content: "";
     width: 132px;
-    height: 132px;
-    
+    height: 139px;
+
     border-radius: 50%;
     position: absolute;
     top: -28%;
@@ -125,50 +123,64 @@
 }
 
 .buy-now-list-item:first-child {
-    border: 2px solid var(--primary-bcg-color);    
+    border: 2px solid var(--primary-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--primary-bcg-color);
+        cursor: pointer;
+    }
 }
 
 .buy-now-list-item:first-child:before {
     background-color: var(--img-ice-cream-bcg-color);
-    
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    background-image: url(../images/modal/buy/buy1.png);
+    background: url(../images/modal/buy/buy1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     background-size: cover;
-    background-position: 0px;
+    background-position-y: -10px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    
 }
 
 
 .buy-now-list-item:nth-child(2):before {
-    background-color: var(--img-ice-coffee-bcg-color);    
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background-color: var(--img-ice-coffee-bcg-color);
+    background: url(../images/modal/buy/buy2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    background-position-y: -8px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    // box-shadow: 0 12px rgb(255 240 190 / 53%), 0 5.40397px 20.2649px rgb(153 114 23 / 25%);
-   
-    // background-image: url(../images/modal/buy/buy2.png);
-    // background-size: cover;
-    
+
 }
 
 .buy-now-list-item:nth-child(2) {
     border: 2px solid var(--img-ice-coffee-bcg-color);
-    background-color: var(--img-ice-coffee-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--img-ice-coffee-bcg-color);
+        cursor: pointer;
+    }
 }
 
 .buy-now-list-item:nth-child(3):before {
     background-color: var(--img-milkshake-bcg-color);
-    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: url(../images/modal/buy/buy3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background-position-y: -8px, 0px, 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    border-radius: 98.6301px;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-    background-image: url(../images/modal/buy/buy3.png);
-
-    // background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    // box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    // background-image: url(../images/modal/buy/buy2.png);
 }
 
-.buy-now-list-item:nth-child(3) {    
+.buy-now-list-item:nth-child(3) {
     border: 2px solid var(--img-milkshake-bcg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--img-milkshake-bcg-color);
+        cursor: pointer;
+    }
+
 }
 
 .buy-now-list-item:not(:last-child) {
