@@ -25,30 +25,35 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
+        <button class="hero__btn" type="button">
+          <svg class="hero__icon">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="hero__img-box">
       <picture>
-          <source
-            srcset="
-              ./images/tablet/hero/dish.png    1x,
-              ./images/tablet/hero/dish@2x.png 2x
-            "
-            media="(max-width: 1199px)"
-          />
-          <source
-            srcset="
-              ./images/desktop/hero/dish.png    1x,
-              ./images/desktop/hero/dish@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
+        <source
+          srcset="
+            ./images/tablet/hero/dish.png    1x,
+            ./images/tablet/hero/dish@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero/dish.png    1x,
+            ./images/desktop/hero/dish@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
 
-          <img
-            src="./images/tablet/hero/dish.png"
-            alt="Ice cream"
-            class="hero__img-dish"
-          />
+        <img
+          src="./images/tablet/hero/dish.png"
+          alt="Ice cream"
+          class="hero__img-dish"
+        />
       </picture>
       <picture>
         <source
@@ -57,7 +62,6 @@
             ./images/mobile/hero/bcg@2x.png 2x
           "
           media="(max-width: 767px)"
-          width="480px"
         />
         <source
           srcset="
