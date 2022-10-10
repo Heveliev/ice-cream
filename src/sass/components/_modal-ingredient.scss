@@ -1,20 +1,20 @@
 // modal-1
 .backdrop-ingredients {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(106, 107, 115, 0.4);
-
-    transition: opacity 500ms ease, visibility 500ms ease;
+            // position: fixed;
+            // top: 0;
+            // left: 0;
+            // z-index: 10;
+            // height: 100%;
+            // width: 100%;
+            // background-color: rgba(106, 107, 115, 0.4);
+            // transition: opacity 500ms ease, visibility 500ms ease;
     overflow-y: scroll;
 }
 
 .modal-ingredients {
+    z-index: 100;
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 280px;
@@ -22,6 +22,7 @@
     background-color: var(--primary-text-color);
     border: 2px solid var(--accent-color);
     border-radius: 10px;
+
 
 }
 
@@ -316,7 +317,7 @@
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 }
 
-.ingredients-img--color-brown::after {
+.ingredients-img--color-yellow::after {
     background-image: url(../images/modal/igredients/ing2.png);
     z-index: 110;
 }
