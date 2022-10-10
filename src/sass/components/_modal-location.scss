@@ -19,6 +19,12 @@ padding: 32px 60px;
 max-width: 568px;
 }
 }
+// .modal_location-map{
+//   position: fixed;
+//   // width: 448px;
+//   width: 100%;
+//   border-radius: 10px;
+// }
 
 .modal-location-close-btn {
     width: 16px;
@@ -34,6 +40,9 @@ max-width: 568px;
       top: 20px;
       right: 20px;
     }
+    @media screen and (min-width: 1200px) {
+      top: 20px;
+      right: 20px;
   }
 .modal-location__text {
     display: block;
@@ -57,6 +66,7 @@ max-width: 568px;
   
   .modal_location-map {
     display: block;
+    position: fixed;
     width:224px;
     height:199px;
     margin-bottom: 24px;
@@ -90,4 +100,5 @@ max-width: 568px;
         background-color:#0A8817;;
         outline: none;
     }
+}
 }
