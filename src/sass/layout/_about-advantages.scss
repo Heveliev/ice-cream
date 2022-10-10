@@ -109,10 +109,28 @@
   background-color: var(--accent-color);
   border-radius: 10px;
   border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: var(--secondary-bcg-color);
+  }
 }
 
 .about-content__button--icon {
   fill: #131313;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .about-content__button:focus & {
+    fill: var(--secondary-bcg-color);
+  }
 }
 
 .advantages-list__item:not(:last-child) {
@@ -195,6 +213,10 @@
     margin-bottom: 0;
   }
 
+  .about-content__img {
+    top: 26px;
+  }
+
   .about-content__text--wrapper {
     gap: 8px;
     display: flex;
@@ -235,7 +257,6 @@
   }
 
   .advantages-list__item--lead-text {
-    font-family: var(--primary-font-family);
     font-size: 48px;
     line-height: calc(59 / 48);
   }
@@ -244,5 +265,67 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-advantages {
+    padding-bottom: 180px;
+  }
+
+  .about-content {
+    align-items: center;
+    padding-bottom: 89px;
+  }
+
+  .about-label {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+
+  .about-title {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+
+  .about-content__img,
+  .about-content__img--bgc::before {
+    width: 500px;
+    height: 530px;
+  }
+
+  .about-content__img {
+    top: 39px;
+  }
+
+  .about-content__text--wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .about-content__text--lead,
+  .about-content__text,
+  .about-content__text--tablet {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+
+  .advantages-list {
+    column-gap: 32px;
+  }
+
+  .advantages-list-item__img--bg::before {
+    margin-bottom: 40px;
+  }
+
+  .advantages-list__item--lead-text {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+  }
+
+  .advantages-list__item--text {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.02em;
   }
 }
