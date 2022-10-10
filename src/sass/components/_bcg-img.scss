@@ -1,0 +1,14 @@
+.bcg-img{
+    background-image: url(../images/mobile/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+    background-size: cover;
+}
+@media screen and (min-width: 768px){
+    .bcg-img{
+        background-image: url(../images/tablet/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+  }
+}
+  @media screen and (min-width: 1200px){
+    .bcg-img{
+        background-image: url(../images/desktop/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+  }
+}
