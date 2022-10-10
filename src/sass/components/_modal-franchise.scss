@@ -1,15 +1,3 @@
-
-.backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--backdrop-bcg-color);
-  opacity: 1;
-  z-index: 10;
-  transition: opacity 250ms linear, visibility 250ms linear;
-}
 .modal-franchise {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
