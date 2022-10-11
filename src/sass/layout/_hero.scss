@@ -184,8 +184,8 @@
 .hero__text-box {
   position: absolute;
 
-  width: 151px;
-  bottom: 25px;
+  width: 200px;
+  bottom: 50px;
   left: 217px;
 
   letter-spacing: 0;
@@ -195,15 +195,27 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 200px;
     bottom: 104px;
     left: 256px;
   }
 }
 
+.hero__text {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+}
+
 .hero__btn {
   padding: 0;
-  background-color: var(--primary-bcg-color);
+  background: 0 0;
   border: none;
 
   &:hover .hero__icon {
@@ -220,17 +232,40 @@
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__text {
-  font-size: 12px;
-  line-height: 1.4;
-  letter-spacing: 0;
+.hero__bubble {
+  display: flex;
+  justify-content: center;
 
-  margin-bottom: 12px;
+  position: absolute;
+  top: -300;
+  right: -250;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 24px;
-    font-size: 14px;
+  width: 150px;
+  height: 150px;
+
+  padding-top: 38px;
+
+  background-image: url(../images/desktop/hero/bubble.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  animation-delay: 2s;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+}
+
+.hero__slogan {
+  display: block;
+  width: 120px;
+
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .hero__img-box {
@@ -313,4 +348,62 @@
     bottom: -100px;
     left: 550px;
   }
+}
+
+.hero__hidden-text-box {
+  position: absolute;
+
+  background-color: var(--primary-bcg-color);
+  width: 200px;
+  bottom: -25px;
+
+  letter-spacing: 0;
+
+  opacity: 1;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -39px;
+  }
+}
+
+.hero__is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero__hidden-text {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+}
+
+.hero__hidden-btn {
+  padding: 0;
+  background: 0 0;
+  border: none;
+  transform: rotate(180deg);
+
+  &:hover .hero__hidden-icon {
+    scale: 1.2;
+  }
+}
+
+.hero__hidden-icon {
+  width: 40px;
+  height: 15px;
+
+  fill: var(--primary-text-color);
+
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
