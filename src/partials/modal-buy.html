@@ -1,51 +1,67 @@
 <div class="backdrop is-hidden modal-buy__scroll" data-modal-buy-n>
-      <div class="modal-buy">
-        <button type="button" class="modal-buy-close-btn" data-modal-close-buy-n>
-          <svg class="modal-buy-close-icon" width="9" height="9">
-            <use href="./images/sprite.svg#icon-modal-close"></use>
-          </svg>
-        </button>
-        
-        <form class="modal-buy-form">
-          <p class="buy-now-title">By now</p>
-          <ul class="buy-now-list">
-            <li class="buy-now-list-item"><h3 class="buy-now-list-title">ICE CREAM</h3></li>
-            <li class="buy-now-list-item"><h3 class="buy-now-list-title">ICE COFFE</h3></li>
-            <li class="buy-now-list-item"><h3 class="buy-now-list-title">MILSHAKE</h3></li>
-          </ul>
-          <label class="modal-buy-form-field">            
-            <span class="modal-buy-form-input-wrapper">
-              <input
-                type="text"
-                class="modal-buy-form-input"
-                required
-                pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
-                name="user_name"
-                placeholder="Name"
-              />              
-            </span>
+  <div class="modal-buy">
+    <button type="button" class="modal-buy-close-btn" data-modal-close-buy-n>
+      <svg class="modal-buy-close-icon" width="9" height="9">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-buy-form">
+      <p class="buy-now-title">By now</p>
+      <ul class="buy-now-list">
+        <li class="buy-now-list-item">
+          <input class="custom-checkbox" id="myCheckbox" type="checkbox"/>
+          <label for="myCheckbox" >
+            <h3 class="buy-now-list-title">ICE CREAM</h3>
           </label>
-          <label class="modal-buy-form-field">
-            <span class="modal-buy-form-input-wrapper">
-              <input
-                type="tel"
-                class="modal-buy-form-input"
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
-                name="user_phone"
-                placeholder="Phone"
-              />              
-            </span>
-          </label>          
-          <label class="modal-buy-form-field modal-buy-form-field-message">
-            <textarea
-              name="user_message"
-              class="modal-buy-form-message"
-              placeholder="Comment"
-            ></textarea>
-          </label>          
-          <button type="submit" class="modal-buy-form-button">Submit</button>
-        </form>
-      </div>
-    </div>
+          
+        </li>
+        <li class="buy-now-list-item">
+          <!-- <input
+            type="checkbox"
+            class="modal-buy-check"
+            name="ICE CREAM"
+            required=""
+          /> -->
+          <h3 class="buy-now-list-title">ICE COFFE</h3>
+        </li>
+        <li class="buy-now-list-item">
+          <h3 class="buy-now-list-title">MILSHAKE</h3>
+        </li>
+      </ul>
+      <label class="modal-buy-form-field">
+        <span class="modal-buy-form-input-wrapper">
+          <input
+            type="text"
+            class="modal-buy-form-input"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
+            name="user_name"
+            placeholder="Name"
+          />
+        </span>
+      </label>
+      <label class="modal-buy-form-field">
+        <span class="modal-buy-form-input-wrapper">
+          <input
+            type="tel"
+            class="modal-buy-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            name="user_phone"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+      <label class="modal-buy-form-field modal-buy-form-field-message">
+        <textarea
+          name="user_message"
+          class="modal-buy-form-message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-form-button">Submit</button>
+    </form>
+  </div>
+</div>
