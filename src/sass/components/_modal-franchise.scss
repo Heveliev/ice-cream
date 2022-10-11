@@ -96,13 +96,15 @@ color: var(--icon-modal-close);
       line-height: 0,6;
 }
 }
-//   .form{
-//     width: 100%;
-//     padding: 32px 60px;
-//   }
+  .form {
+    display: block;
+    position: relative;
+
+    }
 
 .modal-input {
   width: 100%;
+  margin-bottom: 16px;
   height: 32px;
   border: 1px solid var(--primary-bcg-color);
   border-radius: 10px;
@@ -131,16 +133,6 @@ color: var(--icon-modal-close);
   }
 }
 
-.modal-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  position: relative;
-  margin-bottom: 4px;
-  display: block;
-  color: var(--second-text-color);
-}
 .modal-text {
   // display: block;
   width: 100%;
