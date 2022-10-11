@@ -1,14 +1,47 @@
 .bcg-img{
     background-image: url(../images/mobile/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
+.bcg-img::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content:"";
+  width: 100%;
+  height: 1100px;
+  background-color: var(--primary-bcg-color);
+}
+.bcg-img::before{
+  z-index: 2;
+  position:absolute;
+  top: 0;
+  left: 0;
+  content:"";
+  width: 100%;
+  height: 20px;
+  background-color: var(--primary-bcg-color);
+}
+
 @media screen and (min-width: 768px){
     .bcg-img{
         background-image: url(../images/tablet/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+  }
+  .bcg-img::after{ 
+    height: 365px;}
+  .bcg-img::before{
+     height: 165px;
   }
 }
   @media screen and (min-width: 1200px){
     .bcg-img{
         background-image: url(../images/desktop/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+  }
+  .bcg-img::after{ 
+    height: 690px;}
+  .bcg-img::before{
+     height: 50px;
   }
 }
