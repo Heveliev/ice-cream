@@ -25,11 +25,22 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="hero__btn" type="button">
+        <button class="hero__btn" type="button" data-modal-open-hero>
           <svg class="hero__icon">
             <use href="./images/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
+        <div class="hero__bubble animate__animated animate__rotateInUpRight">
+          <strong class="hero__slogan">It's delicious here!</strong>
+        </div>
+        <div class="hero__hidden-text-box hero__is-hidden" data-modal-hero>
+          <button class="hero__hidden-btn" type="button" data-modal-close-hero>
+            <svg class="hero__hidden-icon">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <p class="hero__hidden-text">Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
     </div>
     <div class="hero__img-box">
