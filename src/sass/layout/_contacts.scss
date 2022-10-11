@@ -11,7 +11,7 @@
 .contacts__item {
     width: 100%;
     max-width: 440px;
-
+    z-index: 4;
     padding: 40px 32px;
 
     background-color: var(--primary-text-color);
@@ -23,6 +23,7 @@
     position: relative;
     height: 16px;
     margin-bottom: 20px;
+
 }
 
 .contacts-text,
@@ -69,6 +70,7 @@
 }
 
 .work-schedule__wrap {
+
     position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -76,6 +78,7 @@
 
 .work-schedule-list::before {
     content: "";
+
     position: absolute;
     top: 0;
     left: 0;
@@ -85,6 +88,7 @@
 }
 
 .work-schedule-list::after {
+
     content: "";
     position: absolute;
     bottom: 0;
@@ -112,7 +116,9 @@
     margin-top: 32px;
     row-gap: 16px;
 }
-
+.contacts__btn-item{
+    z-index: 5;
+}
 .contacts__btn {
     display: flex;
     width: 196px;
@@ -223,6 +229,7 @@
     }
 
     .contacts__btn-list {
+
         flex-direction: row;
         justify-content: center;
         margin-top: 60px;
