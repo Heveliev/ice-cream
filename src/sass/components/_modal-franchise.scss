@@ -103,6 +103,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
       width: 368px;
+      height: 42px;
     }
     &:focus {
       border-color: var(--accent-color);
