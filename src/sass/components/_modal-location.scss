@@ -48,12 +48,12 @@ width: 568px;
     font-family: var(--secondary-font-family);
     color: var(--secondary-text-color);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: calc(24 / 16);
   
     @media screen and (min-width: 768px) {
       margin-bottom: 32px;
       font-size: 20px;
-      line-height: 1,5;
+      line-height: calc(28 / 20);
     }
     @media screen and (min-width: 1200px){
     font-size: 20px;
@@ -76,14 +76,19 @@ width: 568px;
     align-items: center;
     padding: 12px 34px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: calc(15 / 12);
     border-radius: 10px;
     background: var(--accent-color);
     color: var(--icon-modal-close);
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px)
+    {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
     &:hover
     {
         background-color: #0A8817;
