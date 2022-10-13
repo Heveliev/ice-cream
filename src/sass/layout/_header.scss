@@ -52,10 +52,9 @@
 
     &__link {
         cursor: url(../images/pointer.png),auto;
-        font-family: var(--primary-font-family);
         font-weight: 700;
         font-size: 16px;
-        line-height: 1.25;
+        line-height: calc(20 / 16);
         color: var(--primary-text-color);
 
         &:hover,
@@ -90,7 +89,7 @@
     align-items: baseline;
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.21;
+    line-height: calc(17 / 14);
 
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
@@ -184,6 +183,7 @@
         visibility: visible;
         pointer-events: auto;
         transform: translate(0);
+
     }
 
     &__list {
@@ -238,14 +238,6 @@
     display: flex;
     justify-content: center;
 }
-
-// .is-hidden {
-//     visibility: hidden;
-//     opacity: 0;
-//     pointer-events: none;
-//     transform: translateX(100%);
-// }
-
 .main-button--none {
     @media screen and (min-width: 768px) {
         display: none;
@@ -269,7 +261,7 @@
     align-items: center;
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.21;
+    line-height: calc(17 / 14);
 
     background-color: var(--accent-color);
     color: var(--icon-modal-close);

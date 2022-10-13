@@ -22,14 +22,12 @@
   display: flex;
   justify-content: space-between;
 }
-
 .hero__title {
   margin-bottom: 32px;
   width: 247px;
-
   font-family: var(--secondary-font-family);
   font-size: 26px;
-  line-height: 1.27;
+  line-height: calc(33 / 26);
   text-transform: uppercase;
 
   & span {
@@ -77,7 +75,7 @@
   color: var(--secondary-text-color);
   font-weight: 600;
   font-size: 8px;
-  line-height: 1.25;
+  line-height: calc(10 / 8);
   letter-spacing: 0;
   border: 2px solid var(--accent-color);
   border-radius: 8px;
@@ -100,7 +98,7 @@
     height: 42px;
 
     font-size: 14px;
-    line-height: 1.29;
+    line-height: calc(18 / 14);
   }
 }
 
@@ -116,7 +114,7 @@
   color: var(--accent-color);
   font-weight: 600;
   font-size: 8px;
-  line-height: 1.25;
+  line-height: calc(10 / 8);
   text-decoration: underline;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,7 +132,7 @@
     height: 40px;
 
     font-size: 14px;
-    line-height: 1.22;
+    line-height: calc(17 / 14);
   }
 }
 
@@ -164,7 +162,7 @@
   margin-bottom: 4px;
   font-weight: 900;
   font-size: 28px;
-  line-height: 1.22;
+  line-height: calc(34 / 28);
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 1200px) {
@@ -202,7 +200,7 @@
 
 .hero__text {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: calc(16.8 / 12);
   letter-spacing: 0;
 
   margin-bottom: 12px;
@@ -263,7 +261,7 @@
 .hero__slogan {
   display: block;
   width: 120px;
-
+  line-height: calc(16.8 / 12);
   font-weight: 600;
   font-size: 18px;
 }

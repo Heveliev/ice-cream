@@ -57,26 +57,25 @@
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.22;
+  line-height: calc(22 / 18);
   text-transform: uppercase;
   color: var(--primary-text-color);
   @media screen and (min-width: 768px) {
     margin-bottom: 9px;
     font-size: 26px;
-    line-height: 1.23;
+    line-height: calc(32/ 26);
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 14px;
     font-weight: 400;
     font-size: 30px;
-    line-height: 1.23;
+    line-height: calc(37 / 30);
   }
 }
 .footer__title-large {
   font-weight: 700;
   font-size: 34px;
   line-height: 1.21;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-text-color);
   @media screen and (min-width: 768px) {

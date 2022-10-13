@@ -2,8 +2,10 @@
 
 .about {
   padding-top: 60px;
-  margin-bottom: 32px;
+  padding-bottom: 42px;
+
 }
+.about__info-fox{  margin-bottom: 32px;}
 
 .about__label {
   font-weight: 700;
@@ -21,11 +23,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-.about-content {
-  padding-bottom: 42px;
-}
-
 .about-content__img--bgc {
   display: flex;
   align-items: center;
@@ -101,8 +98,6 @@
   width: 164px;
   height: 42px;
   column-gap: 5px;
-
-  font-family: var(--primary-font-family);
   font-weight: 600;
   line-height: calc(18 / 14);
 
@@ -187,9 +182,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about{    padding-bottom: 53px;}
   .about-content {
     display: flex;
-    padding-bottom: 53px;
+
   }
   .about__label {
     font-weight: 800;
@@ -269,13 +265,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .about-advantages {
-    padding-bottom: 180px;
-  }
+  .about{    padding-bottom: 89px;}
 
   .about-content {
     align-items: center;
-    padding-bottom: 89px;
+
   }
 
   .about-label {

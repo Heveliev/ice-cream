@@ -28,10 +28,9 @@
 }
 
 .products__par-title {
-  font-family: var(--primary-font-family);
   font-weight: 800;
   font-size: 18px;
-  line-height: 22px;
+  line-height: calc(22 / 18);
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -39,10 +38,12 @@
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
+    line-height: calc(27 / 22);
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 30px;
+    line-height: calc(37 / 30);
   }
 }
 
@@ -50,7 +51,7 @@
   font-family: var(--secondary-font-family);
   font-weight: 400;
   font-size: 30px;
-  line-height: 38px;
+  line-height: calc(38 / 30);
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -59,11 +60,11 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 200px;
     font-size: 34px;
-    line-height: 43px;
+    line-height: calc(43 / 34);
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 45px;
+    line-height: calc(45 / 36);
     letter-spacing: 0.06em;
   }
 }
@@ -100,14 +101,17 @@
     width: 280px;
   }
   @media screen and (min-width: 768px) {
-    width: calc((100% - 16px * 2) / 3);
+    // width: ;
+    width: 224px;
+    flex-basis: calc((100% - 16px) / 3);
     min-height: 428px;
     padding-top: 120px;
     padding-left: 25px;
     padding-right: 25px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 32px * 2) / 3);
+    width: 370px;
+    flex-basis:calc((100% - 32px) / 3) ;
     min-height: 535px;
     padding-top: 180px;
     padding-left: 65px;
@@ -117,32 +121,28 @@
 .products__card-title {
   color: var(--secondary-text-color);
   font-size: 20px;
-  line-height: 24px;
+  line-height:calc(24 / 20);
   text-align: center;
   text-transform: uppercase;
-
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 27px;
+    line-height: calc(27 / 22);
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: calc(37 / 30);
     margin-bottom: 65px;
   }
 }
 
 .products__parag {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
+  line-height: calc(24.64 / 14);
   text-align: center;
   color: var(--secondary-text-color);
-
   @media screen and (min-width: 768px) {
     width: 172px;
   }
@@ -151,6 +151,7 @@
     width: 242px;
     height: 142px;
     font-size: 16px;
+    line-height: calc(24.64 / 16);
   }
 }
 
@@ -163,8 +164,8 @@
 .products__card-green::before {
   content: '';
   position: absolute;
-  width: 200.33px;
-  height: 199.68px;
+  width: 200px;
+  height: 200px;
   top: 0px;
   left: 50%;
   z-index: 1;
@@ -185,8 +186,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 199.34px;
-    height: 196.85px;
     background-image: url('../images/tablet/product/product1.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -197,8 +196,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 301.76px;
-    height: 300.29px;
+    width: 300px;
+    height: 300px;
     background-image: url('../images/desktop/product/product1.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -218,8 +217,8 @@
 .products__card-yellow::before {
   content: '';
   position: absolute;
-  width: 200.33px;
-  height: 199.68px;
+  width: 200px;
+  height: 200px;
   top: 0px;
   left: 50%;
   z-index: 1;
@@ -240,8 +239,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 199.34px;
-    height: 196.85px;
     background-image: url('../images/tablet/product/product2.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -252,8 +249,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 301.76px;
-    height: 300.29px;
+    width: 300px;
+    height: 300px;
     background-image: url('../images/desktop/product/product2.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -273,8 +270,8 @@
 .products__card-brown::before {
   content: '';
   position: absolute;
-  width: 200.33px;
-  height: 199.68px;
+  width: 200px;
+  height: 200px;
   top: 0px;
   left: 50%;
   z-index: 1;
@@ -295,8 +292,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 199.34px;
-    height: 196.85px;
     background-image: url('../images/tablet/product/product3.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -307,8 +302,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 301.76px;
-    height: 300.29px;
+    width: 300px;
+    height: 300px;
     background-image: url('../images/desktop/product/product3.png');
 
     @media screen and (min-device-pixel-ratio: 2),
