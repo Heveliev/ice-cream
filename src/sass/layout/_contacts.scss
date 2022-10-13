@@ -6,11 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .contacts__item {
     width: 100%;
-    max-width: 440px;
+    max-width: 280px;
     z-index: 4;
     padding: 40px 32px;
 
