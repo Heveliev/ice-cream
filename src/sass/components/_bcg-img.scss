@@ -1,47 +1,38 @@
-.bcg-img{
-    background-image: url(../images/mobile/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-.bcg-img::after{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  content:"";
-  width: 100%;
-  height: 1100px;
-  background-color: var(--primary-bcg-color);
-}
-.bcg-img::before{
-  z-index: 2;
-  position:absolute;
-  top: 0;
-  left: 0;
-  content:"";
-  width: 100%;
-  height: 20px;
-  background-color: var(--primary-bcg-color);
-}
+.bcg-img{  
+  background-image: url(../images/mobile/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+  background-position: 50% 20px,0 20px;
+  background-repeat: no-repeat;
+  background-size: 100%,auto 1100px;
+  position: relative;
+  top: -20px;
+  @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+background-image: url('../images/mobile/gallery/bcg@2x.jpg');
+}}
+
 
 @media screen and (min-width: 768px){
-    .bcg-img{
-        background-image: url(../images/tablet/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
-  }
-  .bcg-img::after{ 
-    height: 365px;}
-  .bcg-img::before{
-     height: 165px;
-  }
-}
+  .bcg-img{  
+    background-image: url(../images/tablet/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+    background-position: 50% 163px,0 163px;
+    background-size: auto 958px,100% 958px;
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+background-image: url('../images/tablet/gallery/bcg@2x.jpg');
+}}}
+
+
   @media screen and (min-width: 1200px){
-    .bcg-img{
-        background-image: url(../images/desktop/gallery/bcg.png),linear-gradient(#FCFCFC, #FCFCFC);
+    .bcg-img{  
+      background-image: url(../images/desktop/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+      background-position: 50% 95px,0 95px;
+      background-size: auto 1118px,100% 1118px;
+      @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+background-image: url('../images/desktop/gallery/bcg@2x.jpg');
+}}
   }
-  .bcg-img::after{ 
-    height: 690px;}
-  .bcg-img::before{
-     height: 50px;
-  }
-}

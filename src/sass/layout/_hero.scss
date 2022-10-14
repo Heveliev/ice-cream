@@ -22,14 +22,12 @@
   display: flex;
   justify-content: space-between;
 }
-
 .hero__title {
   margin-bottom: 32px;
   width: 247px;
-
   font-family: var(--secondary-font-family);
   font-size: 26px;
-  line-height: 1.27;
+  line-height: calc(33 / 26);
   text-transform: uppercase;
 
   & span {
@@ -77,13 +75,13 @@
   color: var(--secondary-text-color);
   font-weight: 600;
   font-size: 8px;
-  line-height: 1.25;
+  line-height: calc(10 / 8);
   letter-spacing: 0;
   border: 2px solid var(--accent-color);
   border-radius: 8px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition-duration-time-func),
+    color var(--transition-duration-time-func);
 
   &:hover {
     border: 2px solid #0a8817;
@@ -100,7 +98,7 @@
     height: 42px;
 
     font-size: 14px;
-    line-height: 1.29;
+    line-height: calc(18 / 14);
   }
 }
 
@@ -116,10 +114,10 @@
   color: var(--accent-color);
   font-weight: 600;
   font-size: 8px;
-  line-height: 1.25;
+  line-height: calc(10 / 8);
   text-decoration: underline;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration-time-func);
 
   &:hover {
     color: #0a8817;
@@ -134,7 +132,7 @@
     height: 40px;
 
     font-size: 14px;
-    line-height: 1.22;
+    line-height: calc(17 / 14);
   }
 }
 
@@ -164,7 +162,7 @@
   margin-bottom: 4px;
   font-weight: 900;
   font-size: 28px;
-  line-height: 1.22;
+  line-height: calc(34 / 28);
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 1200px) {
@@ -202,7 +200,7 @@
 
 .hero__text {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: calc(16.8 / 12);
   letter-spacing: 0;
 
   margin-bottom: 12px;
@@ -229,7 +227,7 @@
 
   fill: var(--primary-text-color);
 
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale var(--transition-duration-time-func);
 }
 
 .hero__bubble {
@@ -253,7 +251,7 @@
   text-align: center;
   color: var(--secondary-text-color);
 
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 
   @media screen and (max-width: 1199px) {
     display: none;
@@ -263,7 +261,7 @@
 .hero__slogan {
   display: block;
   width: 120px;
-
+  line-height: calc(16.8 / 12);
   font-weight: 600;
   font-size: 18px;
 }
@@ -302,6 +300,15 @@
   @media screen and (min-width: 1200px) {
     bottom: 65px;
     left: 16px;
+
+    animation: plate-rotate 15s linear infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes plate-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -366,7 +373,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -39px;
+    bottom: -35px;
   }
 }
 
@@ -380,15 +387,13 @@
   line-height: 1.4;
   letter-spacing: 0;
 
-  margin-bottom: 12px;
-
   @media screen and (min-width: 1200px) {
-    margin-bottom: 24px;
     font-size: 14px;
   }
 }
 
 .hero__hidden-btn {
+  margin-bottom: 12px;
   padding: 0;
   background: 0 0;
   border: none;
@@ -396,6 +401,10 @@
 
   &:hover .hero__hidden-icon {
     scale: 1.2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 18px;
   }
 }
 
@@ -406,4 +415,52 @@
   fill: var(--primary-text-color);
 
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.truck {
+  position: absolute;
+  z-index: 2;
+  width: 120px;
+  height: 100px;
+  bottom: -8px;
+  right: -400px;
+
+  background-image: url(../images/desktop/hero/car/truck.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  animation: moving 1.5s linear, moving-2 1s linear 3s;
+  animation-fill-mode: forwards;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @keyframes moving {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: translateX(-1100%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moving-2 {
+    0% {
+      transform: translateX(-1100%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(-1600%);
+      opacity: 0;
+    }
+  }
 }
