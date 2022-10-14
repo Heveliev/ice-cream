@@ -118,15 +118,15 @@
     opacity: 0;
     cursor: url(../images/pointer.png),auto;
     &:checked  ~ .buy-now__box-first{
-        background-color: #AEC6A5;
+        background-color: var(--img-ice-cream-bcg-color);
     
     }
     &:checked  ~ .buy-now__box-second{
-        background-color: #EDD276;
+        background-color: var(--img-ice-coffee-bcg-color);
     
     }
     &:checked  ~ .buy-now__box-third{
-        background-color: #D6936D;
+        background-color: var(--img-milkshake-bcg-color);
     
     }
 }
@@ -161,32 +161,32 @@
     background-repeat: no-repeat;
 }
 .buy-now__box-first{
-    border: 2px solid #AEC6A5;
+    border: 2px solid var(--img-ice-cream-bcg-color);
 }
 .buy-now__box-first:before{
     position: absolute;
     top: -50%;
     left: -1px;
-  background-image: url(../images/modal/buy/buy1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);}
+  background-image: url(../images/modal/buy/buy1.png), linear-gradient(0deg, var(--img-ice-cream-ln-grad-color), var(--img-ice-cream-ln-grad-color));
+  box-shadow: 0px 8px 30px var(--img-ice-cream-shadow-color);}
 .buy-now__box-second{
-    border: 2px solid #EDD276;
+    border: 2px solid var(--img-ice-coffee-bcg-color);
 }
 .buy-now__box-second::before{
     position: absolute;
     top: -50%;
     left: -1px;
-  background-image: url(../images/modal/buy/buy2.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);}
+  background-image: url(../images/modal/buy/buy2.png), linear-gradient(0deg, var(--img-ice-coffee-ln-grad-color), var(--img-ice-coffee-ln-grad-color));
+box-shadow: 0px 5.40397px 20.2649px var(--img-ice-coffee-shadow-color);}
 .buy-now__box-third{
-    border: 2px solid #D6936D;
+    border: 2px solid var(--img-milkshake-bcg-color);
 }
 .buy-now__box-third::before{  
     position: absolute ;
     top: -50%;
     left: -1px;
-  background-image: url(../images/modal/buy/buy3.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);}
+  background-image: url(../images/modal/buy/buy3.png), linear-gradient(0deg, var(--img-milkshake-ln-grad-color), var(--img-milkshake-ln-grad-color));
+box-shadow: 0px 5.41333px 20.3px var(--img-milkshake-shadow-color);}
 .buy-now-card-title{
 margin-top: 95px;
 z-index: 3;
@@ -228,10 +228,10 @@ z-index: 3;
         border-color: var(--accent-color);
       }
       &:not(:focus):not(:placeholder-shown):valid {
-        background-color: rgba(72, 146, 67, 0.361);
+        background-color:var(--input-true-bcg) ;
       }
       &:not(:focus):not(:placeholder-shown):invalid {
-        background-color: rgba(202, 87, 106, 0.361);
+        background-color: var(--input-false-bcg);
       }
 }
 
@@ -279,7 +279,7 @@ z-index: 3;
 
     &:hover,
     &:focus {
-        background-color: #0A8817;
+        background-color: var(--btn-hv-fc-color);
     }
 
     &:focus {

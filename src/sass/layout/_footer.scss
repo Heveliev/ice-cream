@@ -7,7 +7,7 @@
     position: absolute;
     width: 100%;
     bottom: 132px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid var(--footer-bfr-border-color);
 
     @media screen and (min-width: 768px) {
       bottom: 53px;

@@ -1,5 +1,5 @@
 .bcg-img{  
-  background-image: url(../images/mobile/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+  background-image: url(../images/mobile/gallery/bcg.jpg), linear-gradient(0deg, var(--bcg-img-ln-grad), var(--bcg-img-ln-grad));
   background-position: 50% 20px,0 20px;
   background-repeat: no-repeat;
   background-size: 100%,auto 1100px;
@@ -14,7 +14,7 @@ background-image: url('../images/mobile/gallery/bcg@2x.jpg');
 
 @media screen and (min-width: 768px){
   .bcg-img{  
-    background-image: url(../images/tablet/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+    background-image: url(../images/tablet/gallery/bcg.jpg), linear-gradient(0deg, var(--bcg-img-ln-grad) , var(--bcg-img-ln-grad));
     background-position: 50% 163px,0 163px;
     background-size: auto 958px,100% 958px;
 
@@ -27,7 +27,7 @@ background-image: url('../images/tablet/gallery/bcg@2x.jpg');
 
   @media screen and (min-width: 1200px){
     .bcg-img{  
-      background-image: url(../images/desktop/gallery/bcg.jpg), linear-gradient(0deg, #fcfcfc , #fcfcfc);
+      background-image: url(../images/desktop/gallery/bcg.jpg), linear-gradient(0deg, var(--bcg-img-ln-grad) , var(--bcg-img-ln-grad));
       background-position: 50% 95px,0 95px;
       background-size: auto 1118px,100% 1118px;
       @media screen and (min-device-pixel-ratio: 2),

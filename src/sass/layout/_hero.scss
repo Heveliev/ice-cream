@@ -84,11 +84,11 @@
     color var(--transition-duration-time-func);
 
   &:hover {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--btn-hv-fc-color);
   }
 
   &:focus {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--btn-hv-fc-color);
     color: var(--primary-text-color);
   }
 
@@ -120,7 +120,7 @@
   transition: color var(--transition-duration-time-func);
 
   &:hover {
-    color: #0a8817;
+    color: var(--btn-hv-fc-color);
   }
 
   &:focus {

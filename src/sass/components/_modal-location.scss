@@ -10,7 +10,7 @@ left: 50%;
 width: 280px;
 transform: translate(-50%, -50%);
 background-color: var(--primary-text-color);
-border: 2px solid #f8d24e;
+border: 2px solid var(--accent-color);
 border-radius: 10px;
 @media screen and (min-width: 768px) {
 padding: 32px 60px;
@@ -27,6 +27,7 @@ width: 568px;
     border: none;
     background-color: var(--primary-text-color);
 
+
   
     @media screen and (min-width: 768px) {
       top: 20px;
@@ -39,7 +40,7 @@ width: 568px;
     transition: fill var(--transition-duration-time-func);
     .modal-location-close-btn:hover &,
     .modal-location-close-btn:focus &{
-      fill: #0A8817;
+      fill: var(--accent-color);
     }
     @media screen and (min-width: 768px) {
   width: 20px;
@@ -95,12 +96,12 @@ width: 568px;
     }
     &:hover
     {
-        background-color: #0A8817;
+        background-color: var(--btn-hv-fc-color);
     }
     &:focus
     {
         color: var(--accent-color);
-        background-color:#0A8817;;
+        background-color:var(--btn-hv-fc-color);
         outline: none;
     }
 }
