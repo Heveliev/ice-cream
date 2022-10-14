@@ -17,8 +17,7 @@
     z-index: 100;
 }
 
-
-.modal-buy-close-btn {
+.modal-buy-mob-close-btn{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -33,16 +32,50 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-.modal-buy-close-icon {
+.modal-buy-close-mob-icon{
     fill: var(--icon-modal-close);
     width: 16px;
     height: 16px;
     .modal-buy-close-btn:hover &,
     .modal-buy-close-btn:focus & {
-        fill: #ababab;
+        fill: var(--accent-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+.modal-buy-close-btn{display: none;}
+.modal-buy-close-icon{display: none;}
+@media screen and (min-width: 768px){
+    .modal-buy-mob-close-btn{display: none;}
+    .modal-buy-close-mob-icon{display: none;}
+    .modal-buy-close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    
+    .modal-buy-close-icon {
+        fill: var(--icon-modal-close);
+        width: 16px;
+        height: 16px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .modal-buy-close-btn:hover &,
+        .modal-buy-close-btn:focus & {
+            fill: var(--accent-color);
+        }
+    }
+}
+
+
 
 .modal-buy-form {
     display: flex;
