@@ -119,15 +119,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill  var(--transition-duration-time-func);
+
 }
 .footer__social-icon {
   fill: var(--primary-bcg-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill  var(--transition-duration-time-func);
+
 }
 
 .footer__social-link:hover .footer__social-icon {

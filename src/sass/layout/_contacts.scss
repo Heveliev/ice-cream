@@ -61,7 +61,7 @@
 
 .contacts__address-mail-link {
     color: var(--address-text-color);
-    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: text-decoration var(--transition-duration-time-func);
 
     &:hover,
     &:focus {
@@ -154,7 +154,7 @@
     color: var(--secondary-text-color);
     background-color: transparent;
     border: 2px solid var(--accent-color);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--transition-duration-time-func),color var(--transition-duration-time-func),fill var(--transition-duration-time-func);
 
     &:hover,
     &:focus {
@@ -170,7 +170,7 @@
 .btn-icon {
     fill: var(--secondary-text-color);
     margin-left: 6px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 
     .contacts__btn:focus & {

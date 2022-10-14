@@ -105,8 +105,8 @@
   border-radius: 10px;
   border: none;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration-time-func),
+    color var(--transition-duration-time-func), fill var(--transition-duration-time-func);
 
   &:hover {
     background-color: #0a8817;
@@ -120,9 +120,6 @@
 
 .about-content__button--icon {
   fill: #131313;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   .about-content__button:focus & {
     fill: var(--secondary-bcg-color);
   }

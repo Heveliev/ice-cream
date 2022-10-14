@@ -26,6 +26,7 @@ width: 568px;
     padding: 0;
     border: none;
     background-color: var(--primary-text-color);
+
   
     @media screen and (min-width: 768px) {
       top: 20px;
@@ -35,6 +36,11 @@ width: 568px;
   .modal-location-close-icon{
     width: 16px;
     height: 16px;
+    transition: fill var(--transition-duration-time-func);
+    .modal-location-close-btn:hover &,
+    .modal-location-close-btn:focus &{
+      fill: #0A8817;
+    }
     @media screen and (min-width: 768px) {
   width: 20px;
   height: 20px;
@@ -81,9 +87,7 @@ width: 568px;
     border-radius: 10px;
     background: var(--accent-color);
     color: var(--icon-modal-close);
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration-time-func), background-color var(--transition-duration-time-func); 
     @media screen and (min-width: 768px)
     {
       font-size: 14px;
