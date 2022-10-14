@@ -48,13 +48,13 @@
     .modal-buy-close-mob-icon{display: none;}
     .modal-buy-close-btn {
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 16px;
-        height: 16px;
         padding: 0px;
         background-color: transparent;
         border: none;
@@ -63,9 +63,10 @@
     }
     
     .modal-buy-close-icon {
+        display: block;
+            width: 20px;
+            height: 20px;
         fill: var(--icon-modal-close);
-        width: 16px;
-        height: 16px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         .modal-buy-close-btn:hover &,
         .modal-buy-close-btn:focus & {
@@ -293,17 +294,7 @@ z-index: 3;
         padding-bottom: 32px;
     }
 
-    .modal-buy-close-btn {
-        top: 20px;
-        right: 20px;
-        width: 20px;
-        height: 20px;
-    }
 
-    .modal-buy-close-icon {
-        width: 20px;
-        height: 20px;
-    }
 
     .buy-now-title {
         margin-top: 32px;
